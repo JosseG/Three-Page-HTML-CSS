@@ -98,6 +98,8 @@ section{
 /* ---------------------Footer----------------*/
 footer{
     margin-top: 25px;
+    display: flex;
+    flex-direction: column;
 }
 .redes{
     display: flex;
@@ -211,7 +213,7 @@ svg:hover path,.red:hover, .red:hover path{
         height: 80vh;
         display: grid;
         grid-template-columns: repeat(6,1fr);
-        grid-template-rows: repeat(4, auto);
+        grid-template-rows: repeat(3, auto);
     }
     .ilustration{
         width: 90%;
@@ -234,12 +236,16 @@ svg:hover path,.red:hover, .red:hover path{
         
     }
     footer{
-        grid-column: 5/-1;
+        grid-column: 6/-1;
         grid-row: 3/4;
-
+        align-items: flex-end;
+        justify-content: center;
+    }
+    .redes{
+        justify-content: space-around;
     }
     .red{
-        
+        margin: 5px;
         width: 50px;
         height: 50px;
         
